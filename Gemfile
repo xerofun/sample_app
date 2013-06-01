@@ -19,18 +19,15 @@ group :production do
   gem 'pg', '0.14.1'
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 4.0.0.beta1'
-  gem 'coffee-rails', '~> 4.0.0.beta1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', platforms: :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+group :doc do
+  gem 'sdoc', '0.3.20', require: false
 end
 
+gem 'sass-rails',   '~> 4.0.0.beta1'
+gem 'coffee-rails', '~> 4.0.0.beta1'
+gem 'uglifier', '>= 1.0.3'
+
+
 gem 'jquery-rails', '2.2.1'
-gem 'turbolinks'
-gem 'jbuilder', '~> 1.0.1'
+gem 'turbolinks', '1.1.1'
+gem 'jbuilder', '1.0.2'
